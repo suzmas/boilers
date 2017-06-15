@@ -1,0 +1,47 @@
+/* GRID LAYOUTS */
+
+
+
+/* Flex grid */
+
+.container {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  ._25 {
+    flex: 2.5;
+  }
+  ._50 {
+    flex: 5;
+  }
+  ._75 {
+    flex: 7.5
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sm_25 {
+    flex: 2.5;
+  }
+  .sm_50 {
+    flex: 5;
+  }
+  .sm_75 {
+    flex: 7.5
+  }
+}
