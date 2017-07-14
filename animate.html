@@ -6,27 +6,20 @@
   <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
   <link href='css/animations.css' rel='stylesheet' type='text/css'>
   <style>
-    div { border-radius: 50%; }
+    .blob { border-radius: 50%; background-color: cornflowerblue; height: 100px; width: 100px; }
+    .blob-eye { border-radius: 50%; background-color: black; height: 10%; width: 10%; position: relative; }
+    .blob-eye-left { top: 20px; left: 20px; }
+    .blob-eye-right { top: 20px; left: 40px; }
+    .blob-mouth { border-radius: 30%; background-color: black; height: 20%; width: 20%; position: relative; top: 50px; left: 10px; }
   </style>
 </head>
 <body>
 
-  <div class="panels">
-    <div class="panel panel1 hvr-grow" style="background-color: blue">
-      <p>Dance</p>
-    </div>
-    <div class="panel panel2 hvr-push" style="background-color: green">
-      <p>Receive</p>
-    </div>
-    <div class="panel panel3 hvr-bounce-in" style="background-color: yellow">
-      <p>Experience</p>
-    </div>
-    <div class="panel panel4 hvr-grow-rotate" style="background-color: red">
-      <p>All</p>
-    </div>
-    <div class="panel panel5 hvr-bob-float" style="background-color: orange">
-      <p>Motion</p>
-    </div>
+  <div class="blob">
+    <div class="blob-eye blob-eye-left hvr-shrink"></div>
+    <div class="blob-eye blob-eye-right hvr-shrink"></div>
+
+    <div class="blob-mouth hvr-grow">
   </div>
 
 </body>
