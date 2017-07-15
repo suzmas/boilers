@@ -7,15 +7,15 @@
   <link href='css/animations.css' rel='stylesheet' type='text/css'>
   <style>
     .blob { border-radius: 50%; background-color: cornflowerblue; height: 20vw; width: 20vw; margin: 15%; }
-    .blob-eye { border-radius: 50%; background-color: black; height: 10%; width: 10%; position: relative; }
-    .blob-eye-left { top: 30px; left: 60px; }
-    .blob-eye-right { top: 30px; left: 100px; }
-    .blob-mouth { border-radius: 30%; background-color: black; height: 20%; width: 20%; position: relative; top: 120px; left: 30px; }
+    .blob-eye { border-radius: 50%; background-color: #535454; height: 13%; width: 10%; position: relative; -webkit-clip-path: circle(50.0% at 50% 100%); clip-path: circle(50.0% at 50% 100%); }
+    .blob-eye-left { top: 50px; left: 60px; }
+    .blob-eye-right { top: 50px; left: 100px; }
+    .blob-mouth { border-radius: 80%; background-color: #535454; height: 11%; width: 33%; position: relative; top: 130px; left: 15px; }
   </style>
 </head>
 <body>
 
-  <div class="blob hvr-bounce-in">
+  <div class="blob hvr-glow">
     <div class="blob-eye blob-eye-left hvr-shrink"></div>
     <div class="blob-eye blob-eye-right hvr-shrink"></div>
 
