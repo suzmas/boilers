@@ -28,14 +28,21 @@
       62% { transform: scaleX(1) scaleY(1); }
       100% { transform: scaleX(1) scaleY(1); }
     }
-    .blob-eye-left { top: 50px; left: 60px; }
-    .blob-eye-right { top: 50px; left: 100px; }
-    .blob-mouth { border-radius: 80%; background-color: #535454; height: 11%; width: 33%; position: relative; top: 130px; left: 15px; }
+    .blob-eye-left { top: 4.5vw; left: 5vw; }
+    .blob-eye-right { top: 4.5vw; left: 8.5vw; }
+    .blob-mouth { border-radius: 80%; background-color: #535454; height: 11%; width: 33%; position: relative; top: 12vw; left: 1vw; }
+
+    @media screen and (max-width: 800px) {
+      .blob { height: 70vw; width: 70vw; }
+      .blob-mouth { top: 45vw; left: 5vw; }
+      .blob-eye-left { top: 16.5vw; left: 16.5vw; }
+      .blob-eye-right { top: 16.5vw; left: 29vw; }
+    }
   </style>
 </head>
 <body>
 
-  <div class="blob hvr-glow">
+  <div class="blob hvr-float-shadow">
     <div class="blob-eye blob-eye-left hvr-shrink"></div>
     <div class="blob-eye blob-eye-right hvr-shrink"></div>
 
