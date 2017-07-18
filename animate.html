@@ -20,6 +20,17 @@
       animation-iteration-count: infinite;
       transform-origin: 50%;
     }
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
     .float-shadow {
       display: inline-block;
       vertical-align: middle;
@@ -33,6 +44,7 @@
       transition-property: transform;
       -webkit-transform: translateY(-5px);
       transform: translateY(-5px);
+      animation: float 3s infinite;
     }
     .float-shadow:before {
       pointer-events: none;
